@@ -82,9 +82,10 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 10px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    background: #a82ad6;
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -162,71 +163,184 @@ section .title::after{
 }
 
 
-/*Шапка сайту*/
-.home{
-    display: flex;
-    background: url("images/11.jpg") no-repeat center;
-    height: 100vh;
-    color: white;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+
+
+/*table of contents*/
+
+.toc {
+	background: #F5F5F5;
+	border-radius: 20px;
 }
-.home .max-width{
-  width: 100%;
-  display: flex;
+.toc_item{
+    padding-right: 30px;
 }
-.home .max-width .row{
-  margin-right: 0;
+.toc_list {
+	padding-bottom: 2px;
 }
-.home .home-content .text-1{
-    font-size: 27px;
-}
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-.home .home-content .text-3 span{
-    color: #fffed6;
-    color: #fffdbe;
-    font-weight: 500;
-}
-.home .home-content a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.home .home-content a:hover{
-    color: crimson;
-    background: none;
+.toc > .czagvstat {
+	padding: 20px;
+	padding-bottom: 0px;
+	margin-bottom: 15px;
+    margin-left: 23px;
 }
 
+.toc_list li {
+	padding: 10px;
+	margin-left: 30px;
+    padding-right: 180px;
+}
+.toc_list li a {
+	font-size: 1.07em;
+	font-weight: 700;
+	color: #34495e;
+	border-bottom: 1px solid #34495e;
+	background-image: none;
+	line-height: 1.9;
+}
+.toc_list li a:hover {
+	color: #34495e;
+	border-bottom: 1px solid #34495e;
+	text-decoration: none;
+}
+.oglavlenie-vnytri li {
+	margin-left: 0px;
+    margin-right: 100px;
+}
+
+/*словарь программиста toc*/
+
+.toc_list2 ol {
+	text-align: center;
+	margin-top: 25px!important;	
+	padding-bottom: 10px;
+}
+.toc_list2 li {
+	display: inline-block;
+	margin-bottom: 20px;
+	width: 30px;
+	margin-right: 25px;
+}
+.toc_list2 li a {
+	font-weight: bold;
+	font-size: 1.4rem;
+	color: #34495e;
+}
+
+
+
+.theory{
+    padding-top: 50px;
+}
+.tname{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text-for-answer{
+    display: none;
+}
+.input[name='answer']{
+    display: none;
+}
+#jt-answer:checked-#t-answer{
+    display: block;
+}
+
+.lbl-jobtype {
+    color:rgb(57, 201, 189);
+    font-weight: 400;
+  }
+  
+  input[name='jobtype'] {
+    display: none;
+  }
+  
+  .text {
+    display: none;
+  }
+  
+#jt-webapp:checked~#t-text {
+    display: block;
+  }
+  
+  #jt-mobile:checked~#t-text {
+    display: block;
+  }
+  
+  #jt-branding:checked~#t-text {
+    display: block;
+  }
+  .tname{
+    padding-top: 10px;
+  }
+
+
+
+
+
+
+/*.toc_background{
+   background-color: #555;
+    width: 50%; 
+}
+.toc{
+
+    padding-top: 20px;
+    
+}
+.toc_item{
+    font-size: 120%;
+    font-weight: 550;
+    margin-bottom: 10px; 
+    padding-bottom: 20px;
+
+    
+}
+.toc_item .text{
+    color:rgb(57, 201, 189);
+}
+.toc_item .text:hover{
+    color:#34495e
+}
 /*Про проект та про компанію*/
 .about{
-    background-color: white
+    background-color: white;
+    padding-bottom: 50px;
+
 }
 .about .title::after{
     color: black;
-    content: "Про головне";
-    color: rgb(141, 7, 105);
-    font-size:x-large;
-    content: "Javascript";
+    content: "сортування";
+ 
+}
+.about .tr .title::after{
+    color: black;
+    content: "рекурсія";
+ 
+}
+.about .tr3 .title::after{
+    color: black;
+    content: "комбінаторика";
+ 
+}
+.about .tr4 .title::after{
+    color: black;
+    content: "інтегрування";
+ 
+}
+.about .tr5 .title::after{
+    color: black;
+    content: "рівняння";
+ 
+}
+.about .tr6 .title::after{
+    color: black;
+    content: "форми запису";
+ 
 }
 .about .about-content .left{
-    width: 45%;
+    width: 100%;
 }
 .about .about-content .left img{
     height: 400px;
@@ -267,6 +381,9 @@ section .title::after{
 
 
 /* services section styling */
+.services{
+    padding-bottom: 30px;
+}
 .services, .teams{
     color:#fff;
     background: #5d0896;
@@ -604,7 +721,6 @@ a{
 
 .card-text {
     padding: 10px 15px;
-    padding: 10px 7px;
     background: rgb(253, 254, 237);
     font-size: 14px;
     color: black;
@@ -615,14 +731,6 @@ a{
     justify-content: center;
     padding: 10px 0;
     width: 100%;
-   text-align: center;
-   height: 50px;
-   display:block;
-   position: relative;
-   border: 1px solid white;
-   margin:0 auto;
-    padding: 10px 0;
-    width: 30%;
     background-color: #b81bae;
     color: #fff;
     border-radius: 0 0 8px 8px;
