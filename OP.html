@@ -6,6 +6,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Програмування - С++</title>
+ <title>Програмування - JS</title>
    <!--Підключення css коду-->
  <link rel="stylesheet" href="styleprog.css"> 
  <link rel="stylesheet" href="stylebuttons.css">
@@ -57,7 +58,7 @@
                      <div class="container" style="margin-top:50px;">
                         <div class="row">
                             <div class="column-1" style="background-color: rgb(255, 252, 234);">
-                              <h2>Арифметичні операції</h2>
+                            <div class="column-2" style="background-color: rgb(255, 252, 234);">              <h2>Арифметичні операції</h2>
                               <hr color="#8e44ad">
                               <p>          <li><span style="color: #ff6cfa;"><strong>+ </strong></span>: операція додавання повертає суму двох чисел.</li>
                                 <li><span style="color: #ff6cfa;"><strong>- </strong> </span>: операція віднімання повертає різницю двох чисел.</li>
@@ -65,6 +66,8 @@
                                 <li><span style="color: #ff6cfa;"><strong>/ </strong></span>: операція ділення повертає частку двох чисел.</li>
                                 <li><span style="color: #ff6cfa;"><strong>% </strong></span>: операція отримання остачі від цілочисельного ділення.</li>
 
+
+                                <li><span style="color: #ff6cfa;"><strong>** </strong></span>: операція піднесення числа в степінь</li>
                                 <b>Також є дві унарні арифметичні операції, які проводяться над одним числом: ++ (інкремент) та - (декремент). Кожна з операцій має два різновиди: префіксний та постфіксний: </b>
                                 <li><span style="color: #ff6cfa;"><strong>Префіксний інкремент</strong></span>:<br>  Збільшує значення змінної на одиницю та отриманий результат використовується як значення виразу ++x.</li>
                                 <li><span style="color: #ff6cfa;"><strong>Постфіксний інкремент</strong></span>: Збільшує значення змінної на одиницю, але значенням виразу x++ буде те, що було до збільшення на одиницю.</li>
@@ -73,6 +76,7 @@
                                 <p><span style="text-decoration: underline;"><em>Арифметичні операції обчислюються зліва направо. Одні операції мають більший пріоритет, ніж інші і тому виконуються спочатку. Операції у порядку зменшення пріоритету:</em></span></p>
                                 <ul style="list-style-type: square;">
                                 <li>++ (інкремент), -- (декремент)</li>
+                                <li>++ (інкремент), -- (декремент), **-(піднесення до степеня)</li>
                                 <li>* (множення), / (ділення), % (остача від ділення)</li>
                                 <li>+ (додавання), - (віднімання)</li>
                                 Порядок виконання арифметичних операцій змінюється за допомогою ().
@@ -95,6 +99,9 @@
                                 </ul>
                                 <li><span style="color: #ff6cfa;"><strong>==</strong></span>: операція "дорівнює". Повертає true, якщо обидва операнди рівні, і false, якщо вони не рівні:  </li>
                                     <li><span style="color: #ff6cfa;"><strong>></strong></span>: операція "більше ніж". Повертає true, якщо перший операнд більший за другий, і false, якщо перший операнд менший за другий.</li>
+                                <li><span style="color: #ff6cfa;"><strong>==</strong></span>: операція "дорівнює". Повертає true, якщо значення лівого і правого операнду рівні(не беручи до уваги типи операндів), інакше-false.Наприклад: <br> 7 =="7"(true);   </li>
+                                <li><span style="color: #ff6cfa;"><strong>===</strong></span>: операція "дорівнює". Повертає true, якщо значення лівого і правого операнду рівні і мають однаковий тип, інакше-false.Наприклад: <br> 7==="7"(false)</li>
+                                <li><span style="color: #ff6cfa;"><strong>></strong></span>: операція "більше ніж". Повертає true, якщо перший операнд більший за другий, і false, якщо перший операнд менший за другий.</li>
                                     <li><span style="color: #ff6cfa;"><strong><</strong></span>: операція "менше ніж". Повертає true, якщо перший операнд менший за другий, і false, якщо перший операнд більший за другий.</li>
                                     <li><span style="color: #ff6cfa;"><strong>>=</strong></span>: операція "більше або рівне ніж". Повертає true, якщо перший операнд більший або рівний за другий, і false, якщо перший операнд менший за другий.</li>
                                     <li><span style="color: #ff6cfa;"><strong><=</strong></span>: операція "менше або рівне ніж". Повертає true, якщо перший операнд більший або рівний за другий, і false, якщо перший операнд більший за другий. </li>
@@ -127,6 +134,8 @@
                                   <li><span style="color: #ff6cfa;"><strong>~ </strong></span>: порозрядне заперечення чи інверсія. Інвертує всі розряди операнда. Якщо розряд дорівнює 1, він стає дорівнює 0, і якщо він дорівнює 0, він отримує значення 1.</li>
                             </div>
                             <div class="column-1" style="background-color:   rgb(255, 252, 234)">
+                           
+                            <div class="column-2" style="background-color:   rgb(255, 252, 234)">
                                 <h2>Операції присвоювання</h2>
                                 <hr color="#8e44ad">
                                 <ul>
@@ -142,6 +151,11 @@
                                   <li><span style="color: #ff6cfa;"><strong>&amp;=</strong></span>: приcвоювання після порозрядної кон'юнкції. Надає лівому операнду результат порозрядної кон'юнкції його бітового подання  з бітовим поданням правого операнда: A &amp;= B еквівалентно A = A &amp; B</li>
                                   <li><span style="color: #ff6cfa;"><strong>|=</strong></span>: приcвоювання після порозрядної диз'юнкції. Надає лівому операнду результат порозрядної диз'юнкції його бітового подання з бітовим подання правого операнда: A |= B еквівалентно A = A | B</li>
                                   <li><span style="color: #ff6cfa;"><strong>^=</strong></span>: приcвоювання після операції, що виключає АБО. Надає лівому операнду результат операції виключає АБО його бітового подання з бітовим подання правого операнда: A ^= B еквівалентно A = A ^ B</li>
+                                  <li><span style="color: #ff6cfa;"><strong></strong>**=</strong></span>: приcвоювання після піднесення числа до степеня. Надає лівому операнду значення піднесеного лівого операнда в степінь правого операнда: A **= B еквівалентно A = A ** B</li>
+                                 <li><span style="color: #ff6cfa;"><strong>&&=</strong></span>: приcвоювання після порозрядної кон'юнкції. Надає лівому операнду результат порозрядної кон'юнкції його бітового подання  з бітовим поданням правого операнда: A &amp;= B еквівалентно A = A &amp; B</li>
+                                  <li><span style="color: #ff6cfa;"><strong>||=</strong></span>: приcвоювання після порозрядної диз'юнкції. Надає лівому операнду результат порозрядної диз'юнкції його бітового подання з бітовим подання правого операнда: A |= B еквівалентно A = A | B</li>
+                                     </ul>
+                                <p>
                                   
     </div>
                           </div>
@@ -166,6 +180,23 @@
   </footer>
 
   <script src="script++.js"></script>
+                  <br><br><br><br><br><br>
+                          <h2>Перевірка знань</h2>
+                          <a href="quiz/OPJ.html">
+                              <img alt="First program quiz" src="images/test.png" width="550" height="320">
+                           </a>
+                </div>
+            </section>       
+  <!-- підвал сайту -->
+  <footer>
+    <a href="D:\Work\Softlearn\Softlearn_Math\math.html" class="floating-button">Основи математики</a>
+        <a href="D:\Work\Softlearn\English\eng.html" class="floating-button">Англійська мова</a>
+        <a href="D:\Work\Softlearn\Program\program.html" class="floating-button">Програмування</a>
+        <a href="D:\Work\Softlearn\Contact\cont.html" class="floating-button">Контакти</a><br>
+        <span>&copy; Softlearn. All rights reserved.</span>
+  </footer>
+
+  <script src="scriptjava.js"></script>
 
 </body>
 </html>

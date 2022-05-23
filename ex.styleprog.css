@@ -193,10 +193,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-
     color: #fffed6;
-
-    color: #fffdbe;
     font-weight: 500;
 }
 .home .home-content a{
@@ -215,24 +212,37 @@ section .title::after{
     color: crimson;
     background: none;
 }
+.toc{
+  text-align: center;
+    padding-top: 20px;
+}
+.toc_item{
+    font-size: 120%;
+    font-weight: 550;
+    margin-bottom: 10px; 
+    padding-bottom: 20px;
 
+    
+}
+.toc_item .text{
+    color:rgb(57, 201, 189);
+}
+.toc_item .text:hover{
+    color:#34495e
+}
 /*Про проект та про компанію*/
 .about{
-    background-color: white
+    background-color: white;
+    padding-bottom: 50px;
+
 }
 .about .title::after{
     color: black;
-
-    content: "С++";
-
-    content: "Про головне";
-    color: rgb(141, 7, 105);
-    font-size:x-large;
-    content: "Javascript";
-
+    content: "зміст";
+ 
 }
 .about .about-content .left{
-    width: 45%;
+    width: 100%;
 }
 .about .about-content .left img{
     height: 400px;
@@ -273,6 +283,9 @@ section .title::after{
 
 
 /* services section styling */
+.services{
+    padding-bottom: 30px;
+}
 .services, .teams{
     color:#fff;
     background: #5d0896;
@@ -569,14 +582,7 @@ a{
 
 
    .card-sl {
-
-    
-       
     border-radius: 8px;
-    width: 100 px;
-
-    border-radius: 8px;
-
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -587,27 +593,15 @@ a{
 }
 
 .card-action {
-
-    width: 100 px;
     position: relative;
-    text-align: center;
-    
-
-    position: relative;
-
     float: right;
     margin-top: -25px;
     margin-right: 20px;
     z-index: 2;
     color: #E26D5C;
     background: #fff;
-
-    border-radius: 50%;
-    padding: 5px;
-
     border-radius: 100%;
     padding: 15px;
-
     font-size: 15px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }
@@ -619,10 +613,6 @@ a{
 }
 
 .card-heading {
-
-    
-
-
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -632,36 +622,17 @@ a{
 }
 
 .card-text {
-
-    
-
     padding: 10px 15px;
-
-    padding: 10px 7px;
     background: rgb(253, 254, 237);
     font-size: 14px;
     color: black;
 }
 
 .card-button {
-
-
-    display: flex;
-    justify-content: center;
-
     display: flex;
     justify-content: center;
     padding: 10px 0;
     width: 100%;
-
-   text-align: center;
-   height: 50px;
-   display:block;
-   position: relative;
-   border: 1px solid white;
-   margin:0 auto;
-    padding: 10px 0;
-    width: 30%;
     background-color: #b81bae;
     color: #fff;
     border-radius: 0 0 8px 8px;
@@ -673,7 +644,6 @@ a{
     color: #fff;
 
 }
-
 
 
 @-webkit-keyframes pulse {
@@ -699,18 +669,4 @@ a{
         transform: scale(0.9);
         box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
     }
-
 }
-
-.cb{
-    background-color: rgb(116, 41, 149);
-  }
-  .correct {
-    border: 2px solid green;
-}
-.incorrect {
-    border: 2px solid red;
-}        
-
-}
-

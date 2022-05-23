@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Стандартні підключення-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Програмування - C++</title>
+    <link rel="stylesheet" href="ex.css"> <!--Підключення css коду-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="shortcut icon" href="images/2.jpg" type="image/jpg">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/182e3654ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<body>
+    <!--Навігація сайту-->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="D:\Work\Softlearn\home.html">Softlearn</a></div>
+            <ul class="menu">
+                <li><a href="D:\Work\Softlearn\С++\Main.html" class="menu-btn">Основи</a></li>
+                <li><a href="ex.program.html" class="menu-btn">Задачі</a></li>
+                <li><a href="D:\Work\Softlearn\Program\programBot.html" class="menu-btn" target="_blank">Бот-помічник</a></li>
+                <li><a href="D:\Work\Softlearn\Contact\cont.html" class="menu-btn">Контакти</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Шапка сайту -->
+    
+
+    <!-- Про проект та компанію -->
+    <section class="about" id="about project">
+        <div class="max-width">
+            <div class="tr6">
+            <h2 class="title">Практичні навички С++</h2></div>
+            <div class="about-content">
+            
+                   
+                <div class="toc">
+                    <div class="czagvstat">Зміст:</div>
+                    <div class="toc_list">
+                    <ol>
+                    <li class="toc_item"><a href="#toc-0">Теорія</a></li>
+                    <li class="toc_item"><a href="#toc-1">Завдання №1</a></li>
+                    <li class="toc_item"><a href="#toc-2">Завдання №2</a></li>
+                    <li class="toc_item"><a href="#toc-3">Завдання №3</a></li>
+                    </ol>
+                    </div>
+                    </div>
+         
+               </div>
+               <div class="theory">
+                <p><a style="text-decoration: none;" name="toc-0"></a></p>
+                 <div class="tname" name="toc-0">1. Теорія</div>
+                 <div class="theory1"><br><strong>Форми запису виразів</strong><br>Математичні вирази переважно 
+                    записують у вигляді, коли оператор знаходиться між двома операндами . Порядок виконання операцій 
+                    в ньому визначається їх пріоритетом. Якщо ж потрібно змінити пріоритет 
+                    виконання операцій, то використовують дужки. 
+                    Існують інші форми запису математичних виразів, які
+                    інтерпретуються однозначно і не використовують дужок. 
+                    <br> Кажуть, що вираз є записаний у префіксній формі, якщо 
+                    в ньому знак операції безпосередньо передує операндам, на які він діє. Вираз є записаний у постфіксній
+                    формі, якщо в ньому знак операції знаходиться 
+                    безпосередньо після операндів, на які він діє.  <br>
+                    (a+b)*(c+d)^x – інфіксна форма запису; <br>
+*+ab^+cdx – відповідна префіксна форма запису; <br>
+ab+cd+x^* – відповідна постфіксна форма запису.<br><br>
+далі будуть розглянуті алгоритми переведення виразу з інфіксної форми запису в постфіксну і навпаки<br><br>
+                  
+<strong>Алгоритм переводу виразу з інфіксної у постфіксну форму запису.</strong><br>
+
+ 
+1. Записати вхідний вираз у інфіксній формі у повністю „одужкованому” вигляді.<br> 
+2. Зчитати посимвольно вхідний вираз зліва направо. <br>
+2.1.якщо зчитаний символ є операндом, то його записують у вихідний вираз. <br>
+2.2.якщо зчитаний символ є знаком операції, то його заносять у масив. <br>
+2.3.якщо зчитаний символ є знаком закритої дужки ")" (це означає, що ми досягли кінця операції), то видобуваємо зі масиву елемент (знак операції) і записуємо його у вихідний вираз.<br><br>
+ 
+<strong>Алгоритм переводу виразу з постфіксної у інфіксну форму запису.</strong><br>
+Ідея даного методу полягає в наступному<br>
+1. Зчитуємо посимвольно вхідний вираз зліва направо.<<br> 
+1.1.якщо зчитаний символ є операндом, то його записують у масив; <br>
+1.2.якщо зчитаний символ є знаком операції, то: <br>
+1.1.1. видобути зі масиву два останні елементи; <br>
+1.1.2. помістити знак операції між видобутими зі стеку операндами та взяти отриманий вираз в дужки; <br>
+1.1.3. помістити вираз, отриманий в попередньому пункті назад у масив.<br><br>  
+
+                </div>
+                <p><a style="text-decoration: none;" name="toc-1"></a></p>
+                <div class="tname" name="toc-1">1. Завдання</div>
+                <div class="ex1">
+                    запишіть вираз в інфіксній формі, і скориставшись вище наведеним алгоритмом переведіть його в постфіксну форму<br>1) для перевірки можете взяти даний вираз (a+b)*(c+d)^x<br>2) в результаті площа має вийти ab+cd+x^*.
+                  </div>           
+                 </div>
+                <div class="answer">
+             <input type="radio" name="jobtype" id="jt-webapp" />
+                <label class="lbl-jobtype" for="jt-webapp">Відповідь</label>
+                <p class="text-for-jobtype" id="t-webapp"><div class="text" id="t-text">
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);">      <span class="hljs-built_in" style="color: rgb(255, 255, 170);">string</span> <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>;
+                        <span class="hljs-built_in" style="color: rgb(255, 255, 170);">string</span> out;
+                        <span class="hljs-built_in" style="color: rgb(255, 255, 170);">string</span> c_array;
+                        <span class="hljs-built_in" style="color: rgb(255, 255, 170);">string</span> o_array;
+                        <span class="hljs-built_in" style="color: rgb(255, 255, 170);">string</span> art;
+                        char n_oper;
+                        int <span class="hljs-built_in" style="color: rgb(255, 255, 170);">first</span>; int <span class="hljs-built_in" style="color: rgb(255, 255, 170);">last</span>;
+                             <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span> = <span class="hljs-string" style="color: rgb(162, 252, 162);">"((a+b)*((c+d)^x))"</span>;
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (int i{}; i &lt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>.<span class="hljs-built_in" style="color: rgb(255, 255, 170);">length</span>(); i++)
+                            {
+                                char ch;
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (int j = <span class="hljs-number" style="color: rgb(211, 99, 99);">97</span>; j &lt; <span class="hljs-number" style="color: rgb(211, 99, 99);">123</span>; j++) перевіряємо чи символ не є операндом
+                                {
+                                    ch = j;
+                                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (ch == <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i])
+                                        out += <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i];
+                                }
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">42</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">43</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">45</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">47</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">94</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">40</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">41</span>) //перевіряємо чи символ не є оператором
+                                {
+                                    o_array += <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i];
+                                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (int n{}; n &lt; o_array.<span class="hljs-built_in" style="color: rgb(255, 255, 170);">length</span>(); n++)
+                                    {
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (o_array[n] == <span class="hljs-number" style="color: rgb(211, 99, 99);">40</span>)
+                                            <span class="hljs-built_in" style="color: rgb(255, 255, 170);">first</span> = n;
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (o_array[n] == <span class="hljs-number" style="color: rgb(211, 99, 99);">41</span>)
+                                        {
+                                            <span class="hljs-built_in" style="color: rgb(255, 255, 170);">last</span> = n; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">break</span>;
+                                        }
+                                    }
+                                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (int m = <span class="hljs-built_in" style="color: rgb(255, 255, 170);">first</span> + <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>; m &lt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">last</span>; m++)
+                                    {
+                                        out += o_array[m];
+                                    }
+                                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (int m = <span class="hljs-built_in" style="color: rgb(255, 255, 170);">first</span>; m &lt;= <span class="hljs-built_in" style="color: rgb(255, 255, 170);">last</span>; m++)
+                                    {
+                                        o_array.erase(<span class="hljs-built_in" style="color: rgb(255, 255, 170);">first</span>, <span class="hljs-built_in" style="color: rgb(255, 255, 170);">last</span>);
+                                    }
+                                    <span class="hljs-built_in" style="color: rgb(255, 255, 170);">first</span> = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">last</span> = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>;
+                                }
+                                
+                            }
+                        }</pre>
+                </div></p>
+            </div>
+
+            <p><a style="text-decoration: none;" name="toc-2"></a></p>
+            <div class="tname" name="toc-1">2. Завдання</div>
+            <div class="ex1">
+ візьміть вираз з попереднього завдання, і скориставшись 2 алгоритмом переведіть його назад в інфіксну форму<br> </div>
+            <div class="answer">
+                <input type="radio" name="jobtype" id="jt-mobile" />
+                <label class="lbl-jobtype" for="jt-mobile">Відповідь</label>
+                <p class="text-for-jobtype" id="t-mobile"><div class="text" id="t-text">
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);">string <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>;
+                        string <span class="hljs-keyword" style="color: rgb(252, 194, 140);">out</span>;
+                        string oper;
+                        string <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>;
+                        string ar[<span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>];
+                        string let[<span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>];
+                        <span class="hljs-built_in" style="color: rgb(255, 255, 170);">int</span> iter{};
+                        <span class="hljs-built_in" style="color: rgb(255, 255, 170);">int</span> iterl{};
+                        <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span> = <span class="hljs-string" style="color: rgb(162, 252, 162);">"ab9.86*+c11.48g/+x^*"</span>;
+                                cout &lt;&lt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span> &lt;&lt; <span class="hljs-string" style="color: rgb(162, 252, 162);">"\n"</span>;
+                                leter();
+                                <span class="hljs-built_in" style="color: rgb(255, 255, 170);">int</span> <span class="hljs-built_in" style="color: rgb(255, 255, 170);">count</span>{};
+                                <span class="hljs-built_in" style="color: rgb(255, 255, 170);">char</span> it = <span class="hljs-number" style="color: rgb(211, 99, 99);">48</span>;
+                                for (<span class="hljs-built_in" style="color: rgb(255, 255, 170);">int</span> i{}; i &lt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>.length(); i++)
+                                {
+                                    <span class="hljs-built_in" style="color: rgb(255, 255, 170);">char</span> ch;
+                                    for (<span class="hljs-built_in" style="color: rgb(255, 255, 170);">int</span> j = <span class="hljs-number" style="color: rgb(211, 99, 99);">97</span>; j &lt; <span class="hljs-number" style="color: rgb(211, 99, 99);">123</span>; j++)
+                                    {
+                                        ch = j;
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (ch == <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i])
+                                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span> += <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i];
+                                    }
+                                    for (<span class="hljs-built_in" style="color: rgb(255, 255, 170);">int</span> j = <span class="hljs-number" style="color: rgb(211, 99, 99);">48</span>; j &lt; <span class="hljs-number" style="color: rgb(211, 99, 99);">58</span>; j++)
+                                    {
+                                        ch = j;
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (ch == <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i])
+                                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span> += <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i];
+                                    }
+                            
+                                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">42</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">43</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">45</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">47</span> || <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i] == <span class="hljs-number" style="color: rgb(211, 99, 99);">94</span>)
+                                    {
+                                        ar[<span class="hljs-built_in" style="color: rgb(255, 255, 170);">count</span>] = <span class="hljs-string" style="color: rgb(162, 252, 162);">'('</span>;
+                                        ar[<span class="hljs-built_in" style="color: rgb(255, 255, 170);">count</span>] += <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>[<span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.length() - <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>];
+                                        ar[<span class="hljs-built_in" style="color: rgb(255, 255, 170);">count</span>] += <span class="hljs-built_in" style="color: rgb(255, 255, 170);">exp</span>[i];
+                                        ar[<span class="hljs-built_in" style="color: rgb(255, 255, 170);">count</span>] += <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>[<span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.length()-<span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>];
+                                        ar[<span class="hljs-built_in" style="color: rgb(255, 255, 170);">count</span>] += <span class="hljs-string" style="color: rgb(162, 252, 162);">')'</span>;
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.length() &gt; <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>)
+                                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.erase(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.length() - <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>, <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.length() - <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>);
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span> = <span class="hljs-string" style="color: rgb(162, 252, 162);">""</span>;	
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.push_back(it);
+                                        <span class="hljs-built_in" style="color: rgb(255, 255, 170);">count</span>++; it++;
+                                    }
+                                }
+                                for (<span class="hljs-built_in" style="color: rgb(255, 255, 170);">int</span> i{}; i &lt; <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.length(); i++)
+                                {
+                                    <span class="hljs-built_in" style="color: rgb(255, 255, 170);">int</span> need;
+                                    <span class="hljs-built_in" style="color: rgb(255, 255, 170);">char</span> ch;
+                                    for (<span class="hljs-built_in" style="color: rgb(255, 255, 170);">int</span> j = <span class="hljs-number" style="color: rgb(211, 99, 99);">48</span>; j &lt; <span class="hljs-number" style="color: rgb(211, 99, 99);">58</span>; j++)
+                                    {
+                                        ch = j;
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (ch == <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>[i])
+                                        {
+                                            need = ch - <span class="hljs-string" style="color: rgb(162, 252, 162);">'0'</span>;
+                                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.erase(i, <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>);
+                                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">value</span>.insert(i, ar[need]);
+                                            i = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>;
+                                        }
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">continue</span>;
+                                    }
+                                }</pre> </div></p>
+            </div>
+
+
+            
+            </div>
+
+
+            </div>      
+        </div>
+    </section>
+  
+
+    <!-- підвал сайту -->
+    <footer>
+        <a href="D:\Work\Softlearn\Softlearn_Math\math.html" class="floating-button">Основи математики</a>
+        <a href="D:\Work\Softlearn\English\eng.html" class="floating-button">Англійська мова</a>
+        <a href="D:\Work\Softlearn\Program\program.html" class="floating-button">Програмування</a>
+        <a href="D:\Work\Softlearn\Contact\cont.html" class="floating-button">Контакти</a><br>
+        <span>&copy; Softlearn. All rights reserved.</span>
+    </footer>
+
+    <script src="ex.script.js"></script>
+</body>
+</html>

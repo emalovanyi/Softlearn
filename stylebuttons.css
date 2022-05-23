@@ -1,4 +1,3 @@
-
 .btn {
   background-color:rgba(230, 34, 237, 0.4),;
     text-decoration: none;
@@ -40,12 +39,76 @@
     left: 100%;
   }
   .column {
+
+.btn {
+  text-decoration: none;
+  margin-left: 2 px;
+  border: 1px solid rgb(146, 148, 248);
+  position:relative;
+  overflow: hidden;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(66, 206, 253, 0.4);
+}
+.selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(230, 34, 237, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+.column {
+width: 25%;
+float: left;
+grid-column-gap: 10px;
+              grid-row-gap: 10px;
+  padding: 10px;
+  height: 350px;
+
+}
+.column-1 {
+
   width: 25%;
   float: left;
   grid-column-gap: 10px;
                 grid-row-gap: 10px;
     padding: 10px;
+
     height: 320px;
+
+    height: 400px;
+
+}
+.column-2 {
+  width: 33%;
+  float: left;
+  grid-column-gap: 10px;
+                grid-row-gap: 10px;
+    padding: 10px;
+    height: 700px;
+
 
 }
 .content-FP{
@@ -53,7 +116,11 @@
   font-size: larger;
   font-family:'Times New Roman', Times, serif ;
 margin-left:  10px;
+
 height: 1350px;
+
+height: 1175px;
+
 background-color:  rgb(255, 252, 234);;
 }
 .column-4t {
@@ -67,6 +134,7 @@ background-color:  rgb(255, 252, 234);;
   font-size:large;
 
 }
+
 .column-fm {
   width: 1000 px;
   float: left;
@@ -89,10 +157,34 @@ background-color:  rgb(255, 252, 234);;
 }
 .column-2 {
   width: 25%;
+
+.imFP{
+
+  text-align: center;
+  font-style: italic;
+  font-size: larger;
+ background-color: rgb(255, 252, 234);
+}
+.column-3t {
+  width: 80%;
+  float: left;
+  margin-top: none;
+  grid-column-gap: 10px;
+                grid-row-gap: 10px;
+    padding: 10px;
+    height: 65px;
+  font-style: italic;
+  font-size:large;
+
+}
+.column-fm {
+  width: 80%;
+
   float: left;
   grid-column-gap: 10px;
                 grid-row-gap: 10px;
     padding: 10px;
+<
     height: 1100px;
 
 }
@@ -105,6 +197,12 @@ background-color:  rgb(255, 252, 234);;
 }
 .type_C{
   background-color: rgb(255, 252, 234);
+
+    height: 160px;
+    font-style: italic;
+  font-size:large;
+
+
 }
 
 /* Clear floats after the columns */
@@ -113,6 +211,7 @@ background-color:  rgb(255, 252, 234);;
     display: table;
     clear: both;
 }
+
 .btn-1 {
   background-color: blueviolet;
   text-decoration: none;
@@ -153,3 +252,8 @@ background-color:  rgb(255, 252, 234);;
 .btn-1:hover:before {
   left: 100%;
 }
+
+.type_C{
+  background-color: rgb(255, 252, 234);
+}
+
