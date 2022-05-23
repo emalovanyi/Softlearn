@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+ <!--Стандартні підключення-->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Програмування - JS</title>
+   <!--Підключення css коду-->
+ <link rel="stylesheet" href="styleprog.css"> 
+ <link rel="stylesheet" href="stylebuttons.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ <link rel="shortcut icon" href="images/2.jpg" type="image/jpg">
+ <script src="script.js"></script> <!--Підключення js коду-->
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <script src="https://kit.fontawesome.com/182e3654ce.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+     <!--Навігація сайту-->
+     <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="D:\Work\Softlearn\home.html">Soft<span>learn</span></a></div>
+            <ul class="menu">
+                <li><a href="Main.html" class="menu-btn">Основи</a></li>
+                <li><a href="D:\Work\Softlearn\Program\programBot.html" class="menu-btn" target="_blank">Бот-помічник</a></li>
+                <li><a href="D:\Work\Softlearn\Contact\cont.html" class="menu-btn">Контакти</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Шапка сайту -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Навчальна платформа</div>
+                <div class="text-2">Softlearn</div>
+                <div class="text-3">Типи даних в  <span class="typing"></span></div>
+            </div>
+        </div>
+    </section>	<!-- Contact Form Section -->
+
+            <section class="services" id="services">
+                <div class="max-width">
+                    <h2 class="title">Типи даних</h2>
+                    
+                     <div class="container" style="margin-top:50px;">
+                        <div class="row">
+                            <div class="column" style="background-color: rgba(158, 12, 255, 0.566);">
+                              <h2>Числові типи</h2>
+                              <hr color="#8e44ad">
+                              <p> Number - представляє числове значення<br>
+                                BigInt - призначений для представлення дуже великих цілих чисел <br>
+                                 </p>
+                            </div>
+                            <div class="column" style="background-color: rgba(158, 12, 255, 0.566);">
+                              <h2>Символьні типи</h2>
+                              <hr color="#8e44ad">
+                              <p> 
+                                String- представляє рядок ("Hello It's Javascript")</p>
+                            </div>
+                            <div class="column" style="background-color: rgba(158, 12, 255, 0.566);">
+                              <h2>Логічний тип</h2>
+                              <hr color="#8e44ad">
+                              <p> Boolean- повертає лише істинність (True) чи хибність (False) висловлювання</p>
+                            </div>
+                            <div class="column" style="background-color: rgba(158, 12, 255, 0.566)">
+                                <h2>JS-типи</h2>
+                                <hr color="#8e44ad">
+                                <p>Undefined: представляє одне спеціальне значення - undefined та вказує, що значення не встановлено <br>
+
+                                  Null: представляє одне спеціальне значення – null і вказує на відсутність значення<br>
+                                  
+                                  Symbol: є унікальним значенням, яке застосовується для звернення до властивостей складних об'єктів.<br>
+                                  
+                                  Object: представляє комплексний об'єкт </p>
+                              </div>
+                                </div>
+               </section> 
+            
+            <section class="type_C" id="types_C">
+                <div class="max-width">
+                    <h2 class="title">Корисно знати</h2>
+                    
+                     <div class="container" style="margin-top:50px;">
+                        <div class="row">
+                            <div class="column-1" style="background-color: rgb(255, 252, 234);">
+                              <h2>Інтерполяція</h2>
+                              <hr color="#8e44ad">
+                              <p>      
+                                Використання косих лапок дозволяє нам застосовувати такий прийом як інтерполяція - вбудовувати дані в рядок. Наприклад: <br>
+                                <img src="images/user.png"> <br>
+                                Для вбудовування значень виразів (наприклад, значень інших змінних та констант) у рядок перед виразом ставиться знак долара $, після якого у фігурних дужках вказується вираз. <br>
+                                Так, у прикладі вище ${user} означає, що тут рядки треба вбудувати значення змінної user.
+                              
+                              
+                              
+                              
+                              
+                              </p>
+                            </div>
+                            <div class="column-1" style="background-color:   rgb(255, 252, 234);">
+                              <h2>Слабка типізація</h2>
+                              <hr color="#8e44ad">
+                              <p> 
+                                JavaScript є мовою із слабкою типізацією. Це означає, що змінні можуть динамічно змінювати тип. Наприклад: 
+                                <img src="images/types.png"> <br>
+                                Зверніть увагу, яким чином виконалось додавання х та у, як бачимо домінуючим типом є рядковий і в результаті ми отримуємо рядковий тип.<div class=""></div>
+                              
+                              
+                              
+                              </p>
+                            </div>
+                            <div class="column-1" style="background-color:  rgb(255, 252, 234);">
+                              <h2>typeof</h2>
+                              <hr color="#8e44ad">
+                              За допомогою оператора <span style="color: #ff6cfa;"><strong>typeof</strong> </span>можна отримати тип змінної:
+                              <img src="images/typeof.png">
+                            </div>
+                            <div class="column-1" style="background-color:   rgb(255, 252, 234)">
+                                <h2>null i undefined</h2>
+                                <hr color="#8e44ad">
+                              <p> <span style="color: #ff6cfa;"><strong>Undefined</strong></span> вказує, що значення не визначено чи встановлено. <br>
+                                Наприклад, коли ми тільки визначаємо змінну без надання їй початкового значення, вона представляє тип <span style="color: #ff6cfa;"><strong>undefined</strong></span>
+                                <img src="images/1.png"> <br>
+                               Якщо їй присвоїти значення <span style="color: #ff6cfa;"><strong>null</strong></span>, це означає, що змінна має відсутнє значення:
+                               <img src="images/null.png"></p> 
+                                  </div>
+                                  
+                          </div>
+                     </div>
+                </div>
+                <div class="imFP" >
+                  <br><br><br><br><br><br>
+                          <h2>Перевірка знань</h2>
+                          <a href="quiz/TypesJs.html">
+                              <img alt="First program quiz" src="images/test.png" width="550" height="320">
+                           </a>
+                </div>
+            </section>       
+  <!-- підвал сайту -->
+  <footer>
+    <a href="D:\Work\Softlearn\Softlearn_Math\math.html" class="floating-button">Основи математики</a>
+        <a href="D:\Work\Softlearn\English\eng.html" class="floating-button">Англійська мова</a>
+        <a href="D:\Work\Softlearn\Program\program.html" class="floating-button">Програмування</a>
+        <a href="D:\Work\Softlearn\Contact\cont.html" class="floating-button">Контакти</a><br>
+        <span>&copy; Softlearn. All rights reserved.</span>
+  </footer>
+
+  <script src="scriptjava.js"></script>
+
+</body>
+</html>
