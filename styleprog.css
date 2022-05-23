@@ -193,7 +193,9 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
+
     color: #fffed6;
+
     color: #fffdbe;
     font-weight: 500;
 }
@@ -220,10 +222,14 @@ section .title::after{
 }
 .about .title::after{
     color: black;
+
+    content: "С++";
+
     content: "Про головне";
     color: rgb(141, 7, 105);
     font-size:x-large;
     content: "Javascript";
+
 }
 .about .about-content .left{
     width: 45%;
@@ -563,7 +569,14 @@ a{
 
 
    .card-sl {
+
+    
+       
     border-radius: 8px;
+    width: 100 px;
+
+    border-radius: 8px;
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -574,15 +587,27 @@ a{
 }
 
 .card-action {
+
+    width: 100 px;
     position: relative;
+    text-align: center;
+    
+
+    position: relative;
+
     float: right;
     margin-top: -25px;
     margin-right: 20px;
     z-index: 2;
     color: #E26D5C;
     background: #fff;
+
+    border-radius: 50%;
+    padding: 5px;
+
     border-radius: 100%;
     padding: 15px;
+
     font-size: 15px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }
@@ -594,6 +619,10 @@ a{
 }
 
 .card-heading {
+
+    
+
+
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -603,7 +632,11 @@ a{
 }
 
 .card-text {
+
+    
+
     padding: 10px 15px;
+
     padding: 10px 7px;
     background: rgb(253, 254, 237);
     font-size: 14px;
@@ -611,10 +644,16 @@ a{
 }
 
 .card-button {
+
+
+    display: flex;
+    justify-content: center;
+
     display: flex;
     justify-content: center;
     padding: 10px 0;
     width: 100%;
+
    text-align: center;
    height: 50px;
    display:block;
@@ -634,6 +673,7 @@ a{
     color: #fff;
 
 }
+
 
 
 @-webkit-keyframes pulse {
@@ -659,4 +699,18 @@ a{
         transform: scale(0.9);
         box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
     }
+
 }
+
+.cb{
+    background-color: rgb(116, 41, 149);
+  }
+  .correct {
+    border: 2px solid green;
+}
+.incorrect {
+    border: 2px solid red;
+}        
+
+}
+

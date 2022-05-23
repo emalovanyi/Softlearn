@@ -35,12 +35,11 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Основи математики", "Основи програмування", "Англійської мови"], //зміна тексту в шапці
+        strings: ["С++", "С++", "С++"], //зміна тексту в шапці
         typeSpeed: 100,
         backSpeed: 80,
         loop: true
     });
-
     var typed = new Typed(".typing-2", {
         strings: ["навчання", "прогрес", "нові знання"], //зміна тексту про проект
         typeSpeed: 100,
@@ -48,13 +47,8 @@ $(document).ready(function(){
         loop: true
     });
 
-    var typed = new Typed(".typing-3", {
-        strings: ["Основи математики", "Основи програмування", "Англійської мови"], //зміна тексту про компанію
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
 
+    
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
