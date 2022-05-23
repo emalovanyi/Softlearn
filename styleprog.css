@@ -193,6 +193,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
+    color: #fffed6;
     color: #fffdbe;
     font-weight: 500;
 }
@@ -218,6 +219,8 @@ section .title::after{
     background-color: white
 }
 .about .title::after{
+    color: black;
+    content: "Про головне";
     color: rgb(141, 7, 105);
     font-size:x-large;
     content: "Javascript";
@@ -600,6 +603,7 @@ a{
 }
 
 .card-text {
+    padding: 10px 15px;
     padding: 10px 7px;
     background: rgb(253, 254, 237);
     font-size: 14px;
@@ -609,6 +613,8 @@ a{
 .card-button {
     display: flex;
     justify-content: center;
+    padding: 10px 0;
+    width: 100%;
    text-align: center;
    height: 50px;
    display:block;
