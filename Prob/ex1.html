@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Стандартні підключення-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Програмування - C++</title>
+    <link rel="stylesheet" href="ex.css"> <!--Підключення css коду-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="shortcut icon" href="images/2.jpg" type="image/jpg">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/182e3654ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<body>
+    <!--Навігація сайту-->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="D:\Work\Softlearn\home.html">Softlearn</a></div>
+            <ul class="menu">
+                <li><a href="D:\Work\Softlearn\С++\Main.html" class="menu-btn">Основи</a></li>
+                <li><a href="ex.program.html" class="menu-btn">Задачі</a></li>
+                <li><a href="D:\Work\Softlearn\Program\programBot.html" class="menu-btn" target="_blank">Бот-помічник</a></li>
+                <li><a href="D:\Work\Softlearn\Contact\cont.html" class="menu-btn">Контакти</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Шапка сайту -->
+    
+
+    <!-- Про проект та компанію -->
+    <section class="about" id="about project">
+        <div class="max-width">
+            
+            <h2 class="title">Практичні навички С++</h2>
+            <div class="about-content">
+            
+                   
+                <div class="toc">
+                    <div class="czagvstat">Зміст:</div>
+                    <div class="toc_list">
+                    <ol>
+                    <li class="toc_item"><a href="#toc-0">Теорія</a></li>
+                    <li class="toc_item"><a href="#toc-1">Завдання №1</a></li>
+                    <li class="toc_item"><a href="#toc-2">Завдання №2</a></li>
+                    <li class="toc_item"><a href="#toc-3">Завдання №3</a></li>
+                    </ol>
+                    </div>
+                    </div>
+         
+               </div>
+               <div class="theory">
+                <p><a style="text-decoration: none;" name="toc-0"></a></p>
+                 <div class="tname" name="toc-0">1. Теорія</div>
+                 <div class="theory1">Сортування масиву це процес розподілу всіх елементів масиву в певному порядку і є однією з найбільш поширених 
+                    операцій обробки даних.<br><br>
+                    Існує безліч способів сортування масивів. Одними з найпоширеніших є сортування бульбашкою, вставкою і вибором.  Сортування масивів методом вибору, мабуть, найпростіше для розуміння, хоч і одне з найповільніших.<br>
+                    далі розглядатимуться алгоритми кожного з них.<br><br>
+                    <strong>Сортування вибором</strong><br>
+                    Для сортування масиву шляхом вибору від найменшого до найбільшого елемента виконуються такі кроки:<br>
+
+  1. Починаючи з елемента під індексом 0, шукаємо у масиві найменше значення.<br>
+
+  2. Знайдене значення міняємо місцями із нульовим елементом.<br>
+
+  3. Повторюємо кроки №1 і №2 для наступного індексу в масиві (відсортований елемент більше не чіпаємо).<br><br>
+  <strong>Сортування бульбашкою</strong><br>
+  Суть полягає у порівнянні пари значень, які знаходяться поруч, і якщо задоволені задані критерії, значення з цієї пари змінюються місцями. І таким чином елементи "скачуть бульбашкою" до кінця масиву.<br>
+
+
+
+  1. Порівнюється елемент масиву під індексом 0 з елементом масиву під індексом 1. Якщо елемент під індексом 0 більший за елемент під індексом 1, то значення змінюються місцями.<br>
+
+  2. Потім ми переміщуємося до наступної пари значень: елемент під індексом 1 і елемент під індексом 2 і так до тих пір, поки не досягнемо кінця масиву.<br>
+
+  3. Повторюємо крок №1 і крок №2 до тих пір, поки весь масив не буде відсортовано.<br><br>
+
+  <strong>Сортування вставкою</strong><br>
+  В сортуванні методом вставки (англ. insertion sort) масив даних 
+розділяється на дві частини: ліву – відсортовану і праву – невідсортовану. 
+Перший елемент невідсортованої частини вставляється у відсортовану 
+частину таким чином, щоб вона залишалася відсортованою. У результаті 
+відсортована частина збільшується на один елемент, а невідсортована – 
+зменшується. <br><br>
+<strong>далі</strong> необхідно буде реалізувати, наведені вище алгоритми<br><br>
+
+                </div>
+                <p><a style="text-decoration: none;" name="toc-1"></a></p>
+                <div class="tname" name="toc-1">1. Завдання</div>
+                <div class="ex1">
+                    напишіть код програми за алгоритмом з підзаголовка «Сортування масивів методом вибору» так, щоб сортування виконувалося<br> а) в порядку зменшення (від найбільшого числа до найменшого)<br> б) в порядку збільшення (від найменшого числа до найбільшого)<br><br>
+                </div>           
+                 </div>
+                <div class="answer">
+             <input type="radio" name="jobtype" id="jt-webapp" />
+                <label class="lbl-jobtype" for="jt-webapp">Відповідь</label>
+                <p class="text-for-jobtype" id="t-webapp"><div class="text" id="t-text">
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);"><span class="hljs-meta" style="color: rgb(252, 155, 155);">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span> </span>
+                        <span class="hljs-meta" style="color: rgb(252, 155, 155);">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span> <span class="hljs-comment" style="color: rgb(136, 136, 136);">// для std::swap. У C++11 використовуйте заголовок &lt;utility&gt;</span></span>
+                         
+                        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">main</span><span class="hljs-params">()</span>
+                        </span>{
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">const</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> length = <span class="hljs-number" style="color: rgb(211, 99, 99);">5</span>;
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[length] = { <span class="hljs-number" style="color: rgb(211, 99, 99);">30</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">50</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">20</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">40</span> };
+                         
+                            <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Перебираємо кожен елемент масиву (крім останнього, він вже буде відсортований до того часу, коли ми до нього дійдемо)</span>
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> startIndex = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; startIndex &lt; length - <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>; ++startIndex)
+                            {
+                                <span class="hljs-comment" style="color: rgb(136, 136, 136);">// У змінній smallestIndex зберігається індекс найменшого значення, яке ми знайшли в поточній ітерації.</span>
+                                <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Починаємо з того, що найменший елемент в цій ітерації - це перший елемент (індекс 0)</span>
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> smallestIndex = startIndex;
+                         
+                                <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Потім шукаємо менший елемент в іншій частині масиву</span>
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> currentIndex = startIndex + <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>; currentIndex &lt; length; ++currentIndex)
+                                {
+                                    <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Якщо ми знайшли елемент, який менше нашого найменшого елементу,</span>
+                                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[currentIndex] &lt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[smallestIndex])
+                                        <span class="hljs-comment" style="color: rgb(136, 136, 136);">// то запам'ятовуємо його</span>
+                                        smallestIndex = currentIndex;
+                                }
+                         
+                                <span class="hljs-comment" style="color: rgb(136, 136, 136);">// smallestIndex тепер найменший елемент.</span>
+                                <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Міняємо місцями наше початкове найменше число з тим, яке ми виявили</span>
+                                <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::swap(<span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[startIndex], <span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[smallestIndex]);
+                            }
+                         
+                            <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Тепер, коли весь масив відсортований - виводимо його на екран</span>
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> index = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; index &lt; length; ++index)
+                                <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::<span class="hljs-built_in" style="color: rgb(255, 255, 170);">cout</span> &lt;&lt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[index] &lt;&lt; <span class="hljs-string" style="color: rgb(162, 252, 162);">' '</span>;
+                         
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span> <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>;
+                        }</pre>
+                </div></p>
+            </div>
+
+            <p><a style="text-decoration: none;" name="toc-2"></a></p>
+            <div class="tname" name="toc-1">2. Завдання</div>
+            <div class="ex1">
+                Напишіть програму, яка відсортує наступний масив бульбашковим сортуванням відповідно до вищевказаного алгоритму:<br> а) в порядку зменшення (від найбільшого числа до найменшого)<br> б) в порядку збільшення (від найменшого числа до найбільшого)<br><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="jobtype" id="jt-mobile" />
+                <label class="lbl-jobtype" for="jt-mobile">Відповідь</label>
+                <p class="text-for-jobtype" id="t-mobile"><div class="text" id="t-text">
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);"><span class="hljs-meta" style="color: rgb(252, 155, 155);">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span> </span>
+                        <span class="hljs-meta" style="color: rgb(252, 155, 155);">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span> <span class="hljs-comment" style="color: rgb(136, 136, 136);">// для std::swap. У C++11 використовуйте заголовок &lt;utility&gt;</span></span>
+                         
+                        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">main</span><span class="hljs-params">()</span>
+                        </span>{
+                            <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">const</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">length</span><span class="hljs-params">(<span class="hljs-number" style="color: rgb(211, 99, 99);">9</span>)</span></span>;
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[length] = { <span class="hljs-number" style="color: rgb(211, 99, 99);">7</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">5</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">6</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">4</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">9</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">8</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">3</span> };
+                         
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> iteration = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; iteration &lt; length<span class="hljs-number" style="color: rgb(211, 99, 99);">-1</span>; ++iteration)
+                            {
+                                <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Перебираємо кожен елемент масиву до останнього елементу (не включно).</span>
+                                <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Останній елемент не має пари для порівняння</span>
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> currentIndex = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; currentIndex &lt; length - <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>; ++currentIndex)
+                                {
+                                    <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Якщо поточний елемент більше елементу після нього, то міняємо їх місцями</span>
+                                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[currentIndex] &gt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[currentIndex+<span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>])
+                                        <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::swap(<span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[currentIndex], <span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[currentIndex + <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>]);
+                                }
+                            }
+                         
+                            <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Виводимо відсортовний масив на екран</span>
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> index = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; index &lt; length; ++index)
+                                <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::<span class="hljs-built_in" style="color: rgb(255, 255, 170);">cout</span> &lt;&lt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">array</span>[index] &lt;&lt; <span class="hljs-string" style="color: rgb(162, 252, 162);">' '</span>;
+                         
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span> <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>;
+                        }</pre>
+                </div></p>
+            </div>
+
+
+            <p><a style="text-decoration: none;" name="toc-3"></a></p>
+            <div class="tname" name="toc-1">3. Завдання</div>
+            <div class="ex1">
+                Напишіть програму, яка відсортує наступний масив сортуванням вставокю відповідно до вищевказаного алгоритму:<br> а) в порядку зменшення (від найбільшого числа до найменшого)<br> б) в порядку збільшення (від найменшого числа до найбільшого)<br><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="jobtype" id="jt-branding" />
+                <label class="lbl-jobtype" for="jt-branding">Відповідь</label>
+                <p class="text-for-jobtype" id="t-branding"><div class="text" id="t-text">
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">template</span>&lt;<span class="hljs-keyword" style="color: rgb(252, 194, 140);">typename</span> Y&gt;
+                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">void</span> Array&lt;Y&gt;::sortInsert(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-built_in" style="color: rgb(255, 255, 170);">min</span>, <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-built_in" style="color: rgb(255, 255, 170);">max</span>)
+                        {
+                            <span class="hljs-built_in" style="color: rgb(255, 255, 170);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> i = <span class="hljs-built_in" style="color: rgb(255, 255, 170);">min</span>; i &lt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">max</span>; i++)
+                            {
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> k = i;
+                                <span class="hljs-built_in" style="color: rgb(255, 255, 170);">while</span> (k &gt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">min</span> &amp;&amp; m_array[k - <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>] &gt; m_array[k])
+                                {
+                                    swap(m_array[k - <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>], m_array[k]);
+                                    --k;
+                                }
+                            }
+                        }</pre>
+                </div></p>
+            </div>
+
+
+            </div>      
+        </div>
+    </section>
+  
+
+    <!-- підвал сайту -->
+    <footer>
+        <a href="D:\Work\Softlearn\Softlearn_Math\math.html" class="floating-button">Основи математики</a>
+        <a href="D:\Work\Softlearn\English\eng.html" class="floating-button">Англійська мова</a>
+        <a href="D:\Work\Softlearn\Program\program.html" class="floating-button">Програмування</a>
+        <a href="D:\Work\Softlearn\Contact\cont.html" class="floating-button">Контакти</a><br>
+        <span>&copy; Softlearn. All rights reserved.</span>
+    </footer>
+
+    <script src="ex.script.js"></script>
+</body>
+</html>

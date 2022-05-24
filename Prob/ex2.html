@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Стандартні підключення-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Програмування - C++</title>
+    <link rel="stylesheet" href="ex.css"> <!--Підключення css коду-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="shortcut icon" href="images/2.jpg" type="image/jpg">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/182e3654ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<body>
+    <!--Навігація сайту-->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="D:\Work\Softlearn\home.html">Softlearn</a></div>
+            <ul class="menu">
+                <li><a href="D:\Work\Softlearn\С++\Main.html" class="menu-btn">Основи</a></li>
+                <li><a href="ex.program.html" class="menu-btn">Задачі</a></li>
+                <li><a href="D:\Work\Softlearn\Program\programBot.html" class="menu-btn" target="_blank">Бот-помічник</a></li>
+                <li><a href="D:\Work\Softlearn\Contact\cont.html" class="menu-btn">Контакти</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Шапка сайту -->
+    
+
+    <!-- Про проект та компанію -->
+    <section class="about" id="about project">
+        <div class="max-width">
+            <div class="tr">
+            <h2 class="title">Практичні навички С++</h2></div>
+            <div class="about-content">
+            
+                   
+                <div class="toc">
+                    <div class="czagvstat">Зміст:</div>
+                    <div class="toc_list">
+                    <ol>
+                    <li class="toc_item"><a href="#toc-0">Теорія</a></li>
+                    <li class="toc_item"><a href="#toc-1">Завдання №1</a></li>
+                    <li class="toc_item"><a href="#toc-2">Завдання №2</a></li>
+                    <li class="toc_item"><a href="#toc-3">Завдання №3</a></li>
+                    </ol>
+                    </div>
+                    </div>
+         
+               </div>
+               <div class="theory">
+                <p><a style="text-decoration: none;" name="toc-0"></a></p>
+                 <div class="tname" name="toc-0">1. Теорія</div>
+                 <div class="theory1">Рекурсивна функція в мові C++ — це функція, яка викликає саму себе<br><br>
+                    Рекурсивні виклики функцій працюють точно так, як і звичайні виклики функцій. Однак, найбільш важлива відмінність простих функцій від рекурсивних: ви повинні вказати умову завершення рекурсії, в протилежному випадку — функція виконуватиметься нескінченну кількість разів (фактично до тих пір, поки не закінчиться пам’ять в стеці викликів).
+<br><br><strong>Умова завершення рекурсії</strong><br><br>
+
+                    Умова завершення рекурсії — це умова, при якій рекурсивна функція перестане викликати саму себе. В цій умові зазвичай використовується оператор if.<br><br>
+                    <strong>Рекурсивні алгоритми</strong><br>
+                    Рекурсивні функції зазвичай вирішують проблему, спочатку знайшовши рішення для підмножин проблеми (рекурсивно), а потім модифікуючи це «підрішення», щоб дістатися вже до вірного рішення. У вищенаведеному прикладі, алгоритм sumCount(value) спочатку вирішує sumCount(value-1), а потім додає значення value, щоб знайти рішення для sumCount(value).
+
+                    У багатьох рекурсивних алгоритмах деякі дані вводу видають передбачувані дані виводу. Наприклад, sumCount(1) має передбачуваний вивід 1 (ви можете легко це обчислити і перевірити самостійно). Випадок, коли алгоритм при певних даних вводу видає передбачувані дані виводу, називається базовим випадком. Базові випадки виконуються як умови для завершення виконання алгоритму. Їх часто можна ідентифікувати, розглядаючи результати виводу для наступних значень вводу: 0, 1, «» або null.<br><br>
+  <strong>Рекурсія проти ітерацій</strong><br>
+  Найбільш популярне питання, яке задають про рекурсивні функції: «Навіщо використовувати рекурсивну функцію, якщо завдання можна виконати і за допомогою ітерацій (використовуючи цикл for чи цикл while)?». Виявляється, ви завжди можете вирішити рекурсивну проблему ітеративно. Однак, для нетривіальних випадків, рекурсивна версія часто буває набагато простіша як для написання, так і для читання. Наприклад, функцію обчислення n-го числа Фібоначчі можна написати і за допомогою ітерацій, але це складніше! (Спробуйте!)
+
+Ітеративні функції (ті, які використовують цикли for або while) майже завжди більш ефективні, ніж їх рекурсивні аналоги. Це пов’язано з тим, що кожен раз, при виконанні функції, витрачається певна кількість ресурсів на додання і витягування фреймів зі стеку. Ітеративні функції витрачають набагато менше цих ресурсів.
+
+Це не означає, що ітеративні функції завжди є кращим варіантом. Іноді рекурсивна реалізація може бути чистішою і простішою, а деякі додаткові витрати можуть бути більш ніж виправдані, звівши до мінімуму труднощі при майбутній підтримці коду, особливо, якщо алгоритм не вимагає занадто багато часу для пошуку рішення.<br><br>
+
+  
+<strong>далі</strong> необхідно буде реалізувати, наведені задачі пов'язані з рекурсією<br><br>
+
+                </div>
+                <p><a style="text-decoration: none;" name="toc-1"></a></p>
+                <div class="tname" name="toc-1">1. Завдання</div>
+                <div class="ex1">
+                    Факторіал цілого числа N визначається як добуток всіх послідовних чисел від 1 до N (0! = 1).<br>1) Напишіть рекурсивну функцію factorial(), яка повертає факторіал вводу<br>2) Протестуйте її за допомогою перших 8 чисел.
+                  </div>           
+                 </div>
+                <div class="answer">
+             <input type="radio" name="jobtype" id="jt-webapp" />
+                <label class="lbl-jobtype" for="jt-webapp">Відповідь</label>
+                <p class="text-for-jobtype" id="t-webapp"><div class="text" id="t-text">
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);"><span class="hljs-meta" style="color: rgb(252, 155, 155);">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+ 
+                        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">factorial</span><span class="hljs-params">(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> n)</span>
+                        </span>{
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (n &lt; <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>)
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span> <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>;
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span>
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span> factorial(n - <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>) * n;
+                        }
+                         
+                        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">main</span><span class="hljs-params">()</span>
+                        </span>{
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> count = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; count &lt; <span class="hljs-number" style="color: rgb(211, 99, 99);">8</span>; ++count)
+                                <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::<span class="hljs-built_in" style="color: rgb(255, 255, 170);">cout</span> &lt;&lt; factorial(count) &lt;&lt; <span class="hljs-string" style="color: rgb(162, 252, 162);">'\n'</span>;
+                        }</pre>
+                </div></p>
+            </div>
+
+            <p><a style="text-decoration: none;" name="toc-2"></a></p>
+            <div class="tname" name="toc-1">2. Завдання</div>
+            <div class="ex1">
+                Напишіть рекурсивну функцію:<br>1) яка приймає ціле число в якості вхідних даних і повертає суму всіх чисел цього значення (наприклад, 482 = 4 + 8 + 2 = 14).<br>2) Протестуйте вашу програму, використовуючи число 83569 (результатом повинно бути 31).   </div>
+            <div class="answer">
+                <input type="radio" name="jobtype" id="jt-mobile" />
+                <label class="lbl-jobtype" for="jt-mobile">Відповідь</label>
+                <p class="text-for-jobtype" id="t-mobile"><div class="text" id="t-text">
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);"><span class="hljs-meta" style="color: rgb(252, 155, 155);">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+ 
+                        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">sumNumbers</span><span class="hljs-params">(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> x)</span>
+                        </span>{
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (x &lt; <span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>)
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span> x;
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span>
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span> sumNumbers(x / <span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>) + x % <span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>;
+                        }
+                         
+                        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">main</span><span class="hljs-params">()</span>
+                        </span>{
+                            <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::<span class="hljs-built_in" style="color: rgb(255, 255, 170);">cout</span> &lt;&lt; sumNumbers(<span class="hljs-number" style="color: rgb(211, 99, 99);">83569</span>) &lt;&lt; <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::<span class="hljs-built_in" style="color: rgb(255, 255, 170);">endl</span>;
+                        }</pre>
+                </div></p>
+            </div>
+
+
+            <p><a style="text-decoration: none;" name="toc-3"></a></p>
+            <div class="tname" name="toc-1">3. Завдання</div>
+            <div class="ex1">
+                Це вже трохи складніше.<br> Напишіть програму, яка просить користувача ввести ціле число, а потім використовує рекурсивну функцію для виводу бінарного представлення цього числа. </div>
+            <div class="answer">
+                <input type="radio" name="jobtype" id="jt-branding" />
+                <label class="lbl-jobtype" for="jt-branding">Відповідь</label>
+                <p class="text-for-jobtype" id="t-branding"><div class="text" id="t-text">
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);"><span class="hljs-meta" style="color: rgb(252, 155, 155);">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+ 
+                        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">void</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">printBinaryDigits</span><span class="hljs-params">(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">unsigned</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> n)</span>
+                        </span>{
+                            <span class="hljs-comment" style="color: rgb(136, 136, 136);">// Умова завершення</span>
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (n == <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>)
+                                <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span>;
+                         
+                            printBinaryDigits(n / <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>);
+                         
+                            <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::<span class="hljs-built_in" style="color: rgb(255, 255, 170);">cout</span> &lt;&lt; n % <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>;
+                        }
+                         
+                        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">void</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">printBinary</span><span class="hljs-params">(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> n)</span>
+                        </span>{
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (n == <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>)
+                                <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::<span class="hljs-built_in" style="color: rgb(255, 255, 170);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(162, 252, 162);">'0'</span>; <span class="hljs-comment" style="color: rgb(136, 136, 136);">// виводимо "0", якщо n == 0</span>
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span>	
+                                printBinaryDigits(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">static_cast</span>&lt;<span class="hljs-keyword" style="color: rgb(252, 194, 140);">unsigned</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span>&gt;(n));
+                        }
+                         
+                        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">main</span><span class="hljs-params">()</span>
+                        </span>{
+                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">int</span> x;
+                            <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::<span class="hljs-built_in" style="color: rgb(255, 255, 170);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(162, 252, 162);">"Enter an integer: "</span>;
+                            <span class="hljs-built_in" style="color: rgb(255, 255, 170);">std</span>::<span class="hljs-built_in" style="color: rgb(255, 255, 170);">cin</span> &gt;&gt; x;
+                         
+                            printBinary(x);
+                        }</pre>
+                </div></p>
+            </div>
+
+
+            </div>      
+        </div>
+    </section>
+  
+
+    <!-- підвал сайту -->
+    <footer>
+        <a href="D:\Work\Softlearn\Softlearn_Math\math.html" class="floating-button">Основи математики</a>
+        <a href="D:\Work\Softlearn\English\eng.html" class="floating-button">Англійська мова</a>
+        <a href="D:\Work\Softlearn\Program\program.html" class="floating-button">Програмування</a>
+        <a href="D:\Work\Softlearn\Contact\cont.html" class="floating-button">Контакти</a><br>
+        <span>&copy; Softlearn. All rights reserved.</span>
+    </footer>
+
+    <script src="ex.script.js"></script>
+</body>
+</html>
