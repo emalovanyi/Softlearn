@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+ <!--Стандартні підключення-->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Програмування - С++</title>
+   <!--Підключення css коду-->
+ <link rel="stylesheet" href="styleprog.css"> 
+ <link rel="stylesheet" href="stylebuttons.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ <link rel="shortcut icon" href="images/2.jpg" type="image/jpg">
+ <script src="script.js"></script> 
+ <script src="Quiz-1.js"></script> <!--Підключення js коду-->
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <script src="https://kit.fontawesome.com/182e3654ce.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+     <!--Навігація сайту-->
+     <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="D:\Work\Softlearn\home.html">Soft<span>learn</span></a></div>
+            <ul class="menu">
+                <li><a href="Main.html" class="menu-btn">Основи</a></li>
+                <li><a href="D:\Work\Softlearn\Program\programBot.html" class="menu-btn" target="_blank">Бот-помічник</a></li>
+                <li><a href="D:\Work\Softlearn\Contact\cont.html" class="menu-btn">Контакти</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Шапка сайту -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Навчальна платформа</div>
+                <div class="text-2">Softlearn</div>
+                <div class="text-3">Перша програма в  <span class="typing"></span></div>
+            </div>
+        </div>
+    </section>	<!-- Contact Form Section -->
+ <section class="content-FP" id="content-FP" >
+
+        <li style="list-style-type: square;">Спочатку вам слід обрати редактор коду,як-от: Visual Studio,Intellij Idea,Sublime Text,NotePad++...</li>
+        <li style="list-style-type: square;">Далі створюємо консольний проект C++ (файл має розширення<span>&nbsp;</span><span><strong>.cpp</strong></span>).
+            <br />Для виведення рядка на консоль необхідно підключити потрібний функціонал. Для цього на початку файлу йде рядок:</li>
+        
+    <div class="column-4t" style="background-color:  rgba(211, 236, 230, 0.585);">
+    <pre><code>#include &lt;iostream&gt;</code></pre>
+    </div>
+    <div><br><br>
+            <li style="list-style-type: square; text-align: left;">Далі йде визначення функції main. Функція main повинна бути присутня в будь-якій програмі на С++, з неї власне і починається виконання програми.</p>
+            <p><span style="text-decoration: underline;"><strong>Функція main складається з чотирьох елементів:</strong></span></p>
+        
+            <li style="list-style-type: circle; margin-left: 20px;">Тип значення, що повертається(int).</li>
+            <li style="list-style-type: circle; margin-left: 20px;">Назва функції(main).</li>
+            <li style="list-style-type: circle; margin-left: 20px;">Список параметрів. (int main(//параметри функції))</li>
+            <li style="list-style-type: circle; margin-left: 20px;">Тіло функції. ({//набір операторів})
+            <p>У тілі функції відбувається виведення рядка на консоль. Для звернення до консолі використається стандартний потік виведення std::cout(std- "Простір імен"). За допомогою оператора &lt;&lt; в цей потік (в даному випадку фактично на консоль) передається рядок символів, який треба вивести на консоль, тобто Hello world!</p>
+            <p>Наприкінці здійснюємо вихід із функції за допомогою оператора return. Так як функція повинна повертати ціле число, то після return вказується число 0. Нуль використовується як індикатор успішного завершення програми.</p>
+            <p>Після кожної інструкції у мові C++ ставляться крапка з комою.</p>
+            <p>Повний текст програми:</p>
+            </li>
+            
+</div>
+
+<div class="column-fm" style="background-color:  rgba(211, 236, 230, 0.585);">
+    <pre><code>#include &lt;iostream&gt;               // підключаємо бібліотеку iostream
+ 
+        int main()                          // оголошуємо функцію main
+        {                                   // початок функції 
+            std::cout &lt;&lt; &quot;Hello World!&quot;;   // виводимо повідомлення на консоль
+            return 0;                       // вихід з функції
+        }       </code></pre>
+    </div><br><br><br><br><br><br><br><br>
+    Також можна вивести повідомлення способом введення змінної:
+    
+<div class="column-fm" style="background-color:  rgba(211, 236, 230, 0.585);">
+    <pre><code>#include &lt;iostream&gt;   // підключаємо бібліотеку iostream
+        #include &lt;string&gt;       // підключаємо бібліотеку типу string
+        int main()               // оголошуємо функцію main
+        {      
+          std::string x="Hello,It's C++";  // оголошуємо змінну типу string та ініціалізуємо її(присвоюємо для неї значення)
+            std::cout &lt;&lt;x;          // виводимо змінну на консоль
+            return 0;                    // вихід з функції
+        }       </code></pre></div><br><br><br><br><br><br><br><br><br>
+    <li style="list-style-type: square; text-align: left;">Для кращої навігації в коді використовують коментарі.Все, що написано після подвійного слешу <span style="color: #ff0000;">//</span>(<span style="color: #ff0000;">/**/</span>-для 2 і більше рядків) є коментарем. Коментарі ніяк не впливають на роботу програми(компілятор ігнорує їх), і дозволяють зрозуміти, що відбувається в певній стрічці коду.</p>
+     
+
+       
+<section>
+    <div class="imFP" >
+
+            <h2>Перевірка знань</h2>
+            <a href="quiz/FP.html">
+                <img alt="First program quiz" src="images/test.png" width="550" height="320">
+             </a>
+</div>
+       
+    </section>   
+ </section>
+  <!-- підвал сайту -->
+  <footer>
+    <a href="D:\Work\Softlearn\Softlearn_Math\math.html" class="floating-button">Основи математики</a>
+        <a href="D:\Work\Softlearn\English\eng.html" class="floating-button">Англійська мова</a>
+        <a href="D:\Work\Softlearn\Program\program.html" class="floating-button">Програмування</a>
+        <a href="D:\Work\Softlearn\Contact\cont.html" class="floating-button">Контакти</a><br>
+        <span>&copy; Softlearn. All rights reserved.</span>
+  </footer>
+
+  <script src="script++.js"></script>
+
+</body>
+</html>
