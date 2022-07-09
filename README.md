@@ -7,4 +7,6 @@ Everything is very simple! Today, the profession of "programmer" is gaining more
 <strong>Uniqueness.</strong><br>
 The uniqueness of the project lies in its information and structure. Unique courses, in which there will be no "dry" text, and practicality of the site in which they are placed interesting sections for learning.<br>
 # Web-site ARCHITECTURE<br>
-![image](https://user-images.githubusercontent.com/70052763/178110581-3b315c0f-34ae-4b9c-9235-127b22307283.png)
+![image](https://user-images.githubusercontent.com/70052763/178110581-3b315c0f-34ae-4b9c-9235-127b22307283.png)<br>
+# Software Development Process<br>
+![image](https://user-images.githubusercontent.com/70052763/178110650-a68a98c2-644e-4fd5-ba43-5baf756f025f.png)
